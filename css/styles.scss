@@ -1,0 +1,178 @@
+$headerColor: #fff;
+$mainColor: #4d4d4d;
+body{
+  font-family: 'Kanit', sans-serif;
+  color: $mainColor;
+}
+
+// Changin bootstrap buttons
+.btn-primary{
+  background-color: #ff6666;
+  border-color: #ff6666;
+}
+
+.btn-primary:hover{
+  background-color: #FF8C8C;
+  border-color: #FF8C8C;
+}
+
+.btn-lg{
+  width: 500px;
+
+}
+
+// Changin bootstrap navbar
+.navbar-nav{
+  li{
+    margin-right: 20px;
+
+    a{
+      color: $headerColor;
+      font-size: 1.2em;
+    }
+
+    a::after{
+      content: "";
+      width: 30px;
+      height: 3px;
+      background-color: $headerColor;
+      display: block;
+      border: 1px solid;
+      margin-left: auto;
+      margin-right: auto;
+      visibility: hidden;
+      transition: visibility .1s;
+    }
+
+    a:hover::after{
+      visibility: visible;
+
+    }
+
+  }
+}
+
+// Changin progressbar
+.progress-bar{
+  background-color: #FF8A8A;
+}
+
+.secondary-menu{
+  background-color: #ff6666;
+
+
+
+}
+
+#main-header{
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(225, 0, 0, .3)), url("../images/hero-image.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 550px;
+  padding-top: 20px;
+
+  color: $headerColor;
+
+  >div{
+    padding-top: 100px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+
+    h1{
+      font-size: 4em;
+      font-weight: 500;}
+
+    h2{
+      font-size: 3em;}
+
+  }
+}
+
+
+section{
+  padding: 70px 0px;
+
+  h2{
+    font-size: 2.5em;
+    font-weight: 400;
+    color:$mainColor;
+    text-align: center;
+    width: 100%;
+  }
+
+  h2::after{
+    content: "";
+    background-color: #ff6666;
+    width: 50px;
+    height: 4px;
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+  }
+}
+
+#section-about-me{
+  img{
+    width: 150px;
+    height: 150px;
+  }
+}
+
+#section-experience{
+
+  .job-title, .company, .period{
+    display: block;
+    font-weight: 500;
+    margin-bottom: 0;
+    padding: 0;
+  }
+
+  .job-title{
+    font-size: 1.3em;}
+
+  .company, .period{
+    font-size: 1em;
+  }
+
+  .period-big{
+    @extend .period;
+    font-size: 48px;
+    text-align: center;
+    position: relative;
+    top: 40%;
+  }
+
+  ul{
+    margin: 10px 0;
+    //margin-bottom: 10px;
+    padding: 5px 20px;
+  }
+  li{
+    //list-style: none;
+    font-weight: 400;
+  }
+
+  .white-col{
+    background-color: #FFF;
+  }
+}
+
+.section-gray{
+  background-color: #F4F4F4;
+}
+
+.card-header {
+  text-align: center;
+  span{
+    font-size: 4em;
+  }
+}
+
+footer{
+  background-color: #444444;
+  color: $headerColor;
+  height: 150px;
+  text-align: center;
+  padding-top: 60px;
+}

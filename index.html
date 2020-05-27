@@ -3,9 +3,148 @@
   <head>
     <meta charset="utf-8">
     <title>My Personal Site</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;700&family=Roboto:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
-    <h1>Welcome to My Personal Site</h1>
+    <header id="main-header">
+      <nav class="navbar navbar-expand-md">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto mr-auto">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link active">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#section-about-me" class="nav-link">About me</a>
+              </li>
+              <li class="nav-item">
+                <a href="#section-experience" class="nav-link">Experience</a>
+              </li>
+              <li class="nav-item">
+                <a href="#section-skills" class="nav-link">Skills</a>
+              </li>
+              <li class="nav-item">
+                <a href="contact_me.html" class="nav-link">Contact me</a>
+              </li>
+            </ul>
+
+          </div>
+      </nav>
+      <div>
+        <h2>Welcome to My Personal Site</h2>
+        <h1>I'm Alex Aguilar</h1>
+      </div>
+    </header>
+
+    <section id="section-about-me">
+      <div class="container">
+        <div class="row pb-5">
+            <h2>About me</h2>
+        </div>
+        <div class="row pb-5">
+          <div class="col text-center">
+            <img class="rounded-circle" src="images/alex-aguilar1.jpg" alt="">
+          </div>
+        </div>
+        <div class="row">
+          <div class="col text-center">
+              <p class="w-75 ml-auto mr-auto">
+                I’m a technology fan, for 16 years I’ve specialized in different fields such as IT Support, Database Administration, and Software Developer, but now I would like to focus in web design, I’ve already taken HTML, CSS, and JavaScript classes. I want to build my own business offering customers different IT solutions including Web developer and web design.
+              </p>
+          </div>
+        </div>
+      </div>
+
+      </div>
+    </section>
+
+    <section id="section-experience" class="section-gray">
+      <div class="container">
+        <div class="row pb-5">
+            <h2>My Experience</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-7">
+            <span class="job-title">IT Technician, Database administrator - Online Position</span>
+            <span class="company">Agricola Athos S.A</span>
+            <span class="period">2011 - 2014</span>
+
+            <ul>
+              <li>Assist employees via telephone, email.</li>
+              <li>Assist users with backing up computer data on network file shares or external media</li>
+              <li>Provide support to customers on a variety of IT issues by identifying, researching and resolving technical problems.</li>
+              <li>Assist with providing system support services, including service outage diagnosis, troubleshooting and restoration of service, virus protection management.</li>
+              <li> Provide technical assistance on enterprise e-mail system to assist new and existing users at all locations.</li>
+              <li> Create & manage users, computer accounts and their access to network resources in Active Directory.</li>
+              <li>Manage SQL 2012 Database, creating schemas, tables and stored procedures.</li>
+            </ul>
+            <a href="experience.html" class="btn btn-primary">See more about my experience</a>
+          </div>
+          <div class="col-lg-5">
+            <img class="w-100" src="images/experience-img.jpg" alt="">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="section-skills">
+      <div class="container">
+        <div class="row mb-5">
+            <h2>My Skills</h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+              <div class="card">
+                <div class="card-header">
+                  <span>85%</span>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Software Developer</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="skills.html" class="btn btn-primary">See more</a>
+                </div>
+              </div>
+          </div>
+          <div class="col-lg-4">
+              <div class="card">
+                <div class="card-header">
+                  <span>80%</span>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">IT Technician</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="skills.html" class="btn btn-primary">See more</a>
+                </div>
+              </div>
+          </div>
+          <div class="col-lg-4">
+              <div class="card">
+                <div class="card-header">
+                  <span>80%</span>
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title">Database Administrator</h5>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="skills.html" class="btn btn-primary">See more</a>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <footer>
+      <p>© All rights reserved. Made by Alex J. Aguilar</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
   </body>
 </html>
